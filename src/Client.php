@@ -14,7 +14,7 @@ namespace fXmlRpc;
 /**
  * @author Lars Strojny <lstrojny@php.net>
  */
-interface ClientInterface extends CallClientInterface, MulticallClientInterface
+interface Client extends CallClient, MulticallClient
 {
 
 }

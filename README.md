@@ -28,7 +28,7 @@ This is the contract package for fXmlRpc.
 ## Testing
 
 ``` bash
-$ phpspec run
+$ phpunit
 ```
 
 

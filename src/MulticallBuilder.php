@@ -14,14 +14,14 @@ namespace fXmlRpc;
 /**
  * @author Lars Strojny <lstrojny@php.net>
  */
-interface MulticallBuilderInterface
+interface MulticallBuilder
 {
     /**
      * Registers a success handler applicable to all multicall responses
      *
      * @param callable $handler
      *
-     * @return MulticallBuilderInterface
+     * @return self
      *
      * @throws Exception\InvalidArgumentException
      */
@@ -32,7 +32,7 @@ interface MulticallBuilderInterface
      *
      * @param callable $handler
      *
-     * @return MulticallBuilderInterface
+     * @return self
      *
      * @throws Exception\InvalidArgumentException
      */
@@ -46,7 +46,7 @@ interface MulticallBuilderInterface
      * @param callable $onSuccess
      * @param callable $onError
      *
-     * @return MulticallBuilderInterface
+     * @return self
      */
     public function addCall($methodName, array $params = [], callable $onSuccess = null, callable $onError = null);
 

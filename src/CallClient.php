@@ -14,7 +14,7 @@ namespace fXmlRpc;
 /**
  * @author Lars Strojny <lstrojny@php.net>
  */
-interface CallClientInterface
+interface CallClient
 {
     /**
      * Executes a remote call

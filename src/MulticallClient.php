@@ -14,12 +14,12 @@ namespace fXmlRpc;
 /**
  * @author Lars Strojny <lstrojny@php.net>
  */
-interface MulticallClientInterface
+interface MulticallClient
 {
     /**
      * Start sequence of multicall
      *
-     * @return MulticallBuilderInterface
+     * @return MulticallBuilder
      */
     public function multicall();
 }
