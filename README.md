@@ -25,13 +25,6 @@ $ composer require fxmlrpc/fxmlrpc
 This is the contract package for fXmlRpc.
 
 
-## Testing
-
-``` bash
-$ phpunit
-```
-
-
 ## Security
 
 If you discover any security related issues, please contact us at [security@fxmlrpc.org](mailto:security@fxmlrpc.org).
