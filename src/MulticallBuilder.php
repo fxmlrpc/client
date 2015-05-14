@@ -22,8 +22,6 @@ interface MulticallBuilder
      * @param callable $handler
      *
      * @return self
-     *
-     * @throws Exception\InvalidArgumentException
      */
     public function onSuccess(callable $handler);
 
@@ -33,8 +31,6 @@ interface MulticallBuilder
      * @param callable $handler
      *
      * @return self
-     *
-     * @throws Exception\InvalidArgumentException
      */
     public function onError(callable $handler);
 
