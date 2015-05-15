@@ -24,7 +24,7 @@ interface CallClient
      *
      * @return mixed
      *
-     * @throws Exception
+     * @throws Exception\FaultException If an XML RPC fault occures
      */
     public function call($method, array $arguments = []);
 }
