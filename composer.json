@@ -18,17 +18,9 @@
     "require": {
         "php": ">=5.4"
     },
-    "require-dev": {
-        "phpunit/phpunit": "~4.4"
-    },
     "autoload": {
         "psr-4": {
             "fXmlRpc\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "fXmlRpc\\Tests\\": "tests/"
         }
     },
     "extra": {

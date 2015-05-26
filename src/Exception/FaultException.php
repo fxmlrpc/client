@@ -18,60 +18,19 @@ use fXmlRpc\Exception;
  *
  * @author Márk Sági-Kazár <mark.sagikazar@gmail.com>
  */
-final class FaultException extends \RuntimeException implements Exception
+interface FaultException extends Exception
 {
-    /**
-     * @var integer
-     */
-    private $faultCode;
-
-    /**
-     * @var string
-     */
-    private $faultString;
-
-    /**
-     * @param integer $faultCode
-     * @param string  $faultString
-     */
-    public function __construct($faultCode, $faultString)
-    {
-        $this->faultCode = $faultCode;
-        $this->faultString = $faultString;
-
-        $this->message = sprintf('XML RPC fault occured: %d %s', $faultCode, $faultString);
-    }
-
     /**
      * Returns the fault code
      *
      * @return integer
      */
-    public function getFaultCode()
-    {
-        return $this->faultCode;
-    }
+    public function getFaultCode();
 
     /**
      * Returns the fault string
      *
      * @return string
      */
-    public function getFaultString()
-    {
-        return $this->faultString;
-    }
-
-    /**
-     * @param array $response
-     *
-     * @return self
-     */
-    public static function createFromResponse(array $response)
-    {
-        $faultCode = isset($response['faultCode']) ? $response['faultCode'] : 0;
-        $faultString = isset($response['faultString']) ? $response['faultString'] : 'Unknown';
-
-        return new self($faultCode, $faultString);
-    }
+    public function getFaultString();
 }
