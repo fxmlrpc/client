@@ -1,6 +1,6 @@
 {
     "name": "fxmlrpc/fxmlrpc",
-    "description": "Contracts for fXmlRpc",
+    "description": "A modern, super fast XML/RPC client",
     "license": "MIT",
     "keywords": ["xmlrpc", "xml", "rpc"],
     "homepage": "http://fxmlrpc.org",

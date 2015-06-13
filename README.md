@@ -4,7 +4,7 @@
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
 [![Total Downloads](https://img.shields.io/packagist/dt/fxmlrpc/fxmlrpc.svg?style=flat-square)](https://packagist.org/packages/fxmlrpc/fxmlrpc)
 
-**Contracts for fXmlRpc.**
+**A modern, super fast XML/RPC client.**
 
 
 ## Install
