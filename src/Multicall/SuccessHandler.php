@@ -9,12 +9,12 @@
  * file that was distributed with this source code.
  */
 
-namespace fXmlRpc;
+namespace fXmlRpc\Multicall;
 
 /**
- * @author Lars Strojny <lstrojny@php.net>
+ * @author Márk Sági-Kazár <mark.sagikazar@gmail.com>
  */
-interface Client extends CallClient, Multicall\Client
+interface SuccessHandler
 {
-
+    public function onSuccess($result);
 }

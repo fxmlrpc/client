@@ -9,12 +9,17 @@
  * file that was distributed with this source code.
  */
 
-namespace fXmlRpc;
+namespace fXmlRpc\Multicall;
 
 /**
  * @author Lars Strojny <lstrojny@php.net>
  */
-interface Client extends CallClient, Multicall\Client
+interface Client
 {
-
+    /**
+     * Start sequence of multicall
+     *
+     * @return Builder
+     */
+    public function multicall();
 }

@@ -9,12 +9,12 @@
  * file that was distributed with this source code.
  */
 
-namespace fXmlRpc;
+namespace fXmlRpc\Multicall;
 
 /**
  * @author Lars Strojny <lstrojny@php.net>
  */
-interface MulticallBuilder
+interface Builder
 {
     /**
      * Registers a success handler applicable to all multicall responses
@@ -39,12 +39,19 @@ interface MulticallBuilder
      *
      * @param string   $methodName
      * @param array    $params
-     * @param callable $onSuccess
-     * @param callable $onError
+     * @param callable $onSuccess SuccessHandler delegate
+     * @param callable $onError   ErrorHandler delegate
      *
      * @return self
      */
     public function addCall($methodName, array $params = [], callable $onSuccess = null, callable $onError = null);
+
+    /**
+     * @param Call $call
+     *
+     * @return self
+     */
+    public function add(Call $call);
 
     /**
      * Sends the multicall request to the server
